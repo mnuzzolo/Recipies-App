@@ -6,6 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4EB53F542D76A6B6004C85E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB53F532D76A6B6004C85E9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		4EB53F552D76AE38004C85E9 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.rkassets;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# realitytool\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		4EB53F2A2D7643F5004C85E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +45,7 @@
 		4EB53F162D7643F4004C85E9 /* Fetch_TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetch_TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB53F332D7643F5004C85E9 /* Fetch_TakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB53F532D76A6B6004C85E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +94,7 @@
 		4EB53F0D2D7643F4004C85E9 = {
 			isa = PBXGroup;
 			children = (
+				4EB53F532D76A6B6004C85E9 /* Assets.xcassets */,
 				4EB53F182D7643F4004C85E9 /* Fetch_TakeHome */,
 				4EB53F2C2D7643F5004C85E9 /* Fetch_TakeHomeTests */,
 				4EB53F362D7643F5004C85E9 /* Fetch_TakeHomeUITests */,
@@ -104,6 +124,7 @@
 				4EB53F142D7643F4004C85E9 /* Resources */,
 			);
 			buildRules = (
+				4EB53F552D76AE38004C85E9 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -212,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB53F542D76A6B6004C85E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +413,6 @@
 				CODE_SIGN_ENTITLEMENTS = Fetch_TakeHome/Fetch_TakeHome.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fetch_TakeHome/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G8ZM82SQ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -430,7 +451,6 @@
 				CODE_SIGN_ENTITLEMENTS = Fetch_TakeHome/Fetch_TakeHome.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fetch_TakeHome/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G8ZM82SQ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
