@@ -24,37 +24,37 @@ public final class RecipieManager: ObservableObject {
     init(endpoint: String = .allRecipiesURL) {
         if let url = URL(string: endpoint) {
             self.url = url
-            fetchRecipies()
+            Task {
+                await fetchRecipies()
+            }
         } else {
             // Failed to create a valid URL object
             recipies = []
         }
     }
     
-    func fetchRecipies() {
+    @MainActor
+    func fetchRecipies() async {
+        // Clear existing list
+        recipies = []
+        
         guard let url = url else {
             return
         }
 
         var request = URLRequest(url: url)
         request.cachePolicy = .returnCacheDataElseLoad
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                return
-            }
-            
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
             let decoder = JSONDecoder()
-            do {
-                let decodedData = try decoder.decode(Dictionary<String, [Recipie]>.self, from: data)
-                if let result = decodedData["recipes"] {
-                    Task { @MainActor in
-                        self.recipies = result.sorted { $0.name < $1.name }
-                    }
-                }
-            } catch {
-                print("Decoding Error: \(error)")
+            let decodedData = try decoder.decode(Dictionary<String, [Recipie]>.self, from: data)
+            if let result = decodedData["recipes"] {
+                self.recipies = result.sorted { $0.name < $1.name }
             }
         }
-        task.resume()
+        catch {
+            print("Fetching error: \(error)")
+        }
     }
 }

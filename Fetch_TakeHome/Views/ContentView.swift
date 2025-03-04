@@ -30,7 +30,9 @@ struct ContentView: View {
             VStack {
                 Text("No recipies were found.")
                 Button("Try Again") {
-                    manager.fetchRecipies()
+                    Task {
+                        await manager.fetchRecipies()
+                    }
                 }
             }
         }
