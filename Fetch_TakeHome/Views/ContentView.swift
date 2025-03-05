@@ -22,7 +22,7 @@ struct ContentView: View {
             // Recipe List
             List {
                 ForEach(manager.recipes) { recipe in
-                    RecipeView(recipe: recipe)
+                    RecipeView(viewModel: RecipeViewModel(recipe))
                 }
             }
         } else {

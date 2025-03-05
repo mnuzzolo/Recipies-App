@@ -14,7 +14,7 @@ extension CGFloat {
 struct RecipeView: View {
     @Environment(\.openURL) var openURL
 
-    let recipe: Recipe
+    @ObservedObject var viewModel: RecipeViewModel
 
     var body: some View {
         HStack {
@@ -26,7 +26,7 @@ struct RecipeView: View {
     
     @ViewBuilder
     var imageView: some View {
-        CachedAsyncImage(url: recipe.photo_url_small) { phase in
+        CachedAsyncImage(url: viewModel.smallImageURL) { phase in
             switch phase {
             case .empty:
                 ProgressView()
@@ -44,18 +44,18 @@ struct RecipeView: View {
     var metadataView: some View {
         VStack {
             HStack {
-                Text(recipe.name)
+                Text(viewModel.title)
                     .bold()
                     .lineLimit(1)
                 Spacer()
             }
             HStack {
-                Text(recipe.cuisine)
+                Text(viewModel.subtitle)
                     .lineLimit(1)
                     .italic()
                 Spacer()
             }
-            if let url = recipe.source_url {
+            if viewModel.hasMoreInfo, let url = viewModel.moreInfo {
                 HStack {
                     Button("Learn More") {
                         openURL(url)
@@ -68,12 +68,12 @@ struct RecipeView: View {
     
     @ViewBuilder
     var chevronView: some View {
-        if recipe.source_url != nil {
+        if viewModel.hasMoreInfo {
             Image(systemName: "chevron.right")
         }
     }
 }
 
 #Preview {
-    RecipeView(recipe: Recipe(uuid: "foo", cuisine: "Cuisine", name: "Name"))
+    RecipeView(viewModel: RecipeViewModel(Recipe(uuid: "foo", cuisine: "Cuisine", name: "Name")))
 }

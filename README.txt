@@ -10,7 +10,7 @@ I spent a good amount of time using the profiler and logging to verify that my c
 I spent about 5 hours on this take home assignment. I allocated my time on creating the initial view and then on making incremental improvements like image caching and then unit testing the cache. 
 
 ### Trade-offs and Decisions: 
-Since this is a take home project, I didn't spend a ton of time designing or customizing the UI. I decided to use a list view rather than a grid and did not attempt to design anything for tablet or for MacOS, just in the interest of time. I did make a basic UI for when the endpoint returned invalid or empty data however. I could have implemented a ViewModel for my RecipieView, but I decided against it based on how simple the Recipie class ended up being. If I had any more complicated logic there I would have created one that initialized around a recipie object. 
+Since this is a take home project, I didn't spend a ton of time designing or customizing the UI. I decided to use a list view rather than a grid and did not attempt to design anything for tablet or for MacOS, just in the interest of time. I did make a basic UI for when the endpoint returned invalid or empty data however. I also implemented a ViewModel for my RecipeView, which wraps some of the basic data in the Recipe object and handles business logic. 
 
 ### Weakest Part of the Project: 
 At the moment the app is fairly basic, I think if I had more time I would have thought of a more interesting or creative UI but what we have now gets the job done.
