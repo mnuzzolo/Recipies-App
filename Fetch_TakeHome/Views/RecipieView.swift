@@ -26,7 +26,7 @@ struct RecipieView: View {
     
     @ViewBuilder
     var imageView: some View {
-        AsyncImage(url: recipie.photo_url_small) { phase in
+        CachedAsyncImage(url: recipie.photo_url_small) { phase in
             switch phase {
             case .empty:
                 ProgressView()

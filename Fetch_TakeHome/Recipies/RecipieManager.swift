@@ -42,18 +42,18 @@ public final class RecipieManager: ObservableObject {
             return
         }
 
-        var request = URLRequest(url: url)
-        request.cachePolicy = .returnCacheDataElseLoad
-        
         do {
+            // Fetch and decode recipies list from the endpoint
+            var request = URLRequest(url: url)
+            request.cachePolicy = .returnCacheDataElseLoad
             let (data, _) = try await URLSession.shared.data(for: request)
             let decoder = JSONDecoder()
             let decodedData = try decoder.decode(Dictionary<String, [Recipie]>.self, from: data)
             if let result = decodedData["recipes"] {
+                // Update with sorted list (alphabetically by name)
                 self.recipies = result.sorted { $0.name < $1.name }
             }
-        }
-        catch {
+        } catch {
             print("Fetching error: \(error)")
         }
     }
