@@ -8,7 +8,7 @@
 import Foundation
 
 extension ImageLoader {
-    enum LoadingState {
+    enum LoadingState: Equatable {
         case loading
         case success(Data)
         case failure

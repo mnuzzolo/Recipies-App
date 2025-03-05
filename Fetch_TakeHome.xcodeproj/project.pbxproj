@@ -32,19 +32,11 @@
 			remoteGlobalIDString = 4EB53F152D7643F4004C85E9;
 			remoteInfo = Fetch_TakeHome;
 		};
-		4EB53F342D7643F5004C85E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4EB53F0E2D7643F4004C85E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4EB53F152D7643F4004C85E9;
-			remoteInfo = Fetch_TakeHome;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4EB53F162D7643F4004C85E9 /* Fetch_TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetch_TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EB53F332D7643F5004C85E9 /* Fetch_TakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB53F532D76A6B6004C85E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,11 +49,6 @@
 		4EB53F2C2D7643F5004C85E9 /* Fetch_TakeHomeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Fetch_TakeHomeTests;
-			sourceTree = "<group>";
-		};
-		4EB53F362D7643F5004C85E9 /* Fetch_TakeHomeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Fetch_TakeHomeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -81,13 +68,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EB53F302D7643F5004C85E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,7 +77,6 @@
 				4EB53F532D76A6B6004C85E9 /* Assets.xcassets */,
 				4EB53F182D7643F4004C85E9 /* Fetch_TakeHome */,
 				4EB53F2C2D7643F5004C85E9 /* Fetch_TakeHomeTests */,
-				4EB53F362D7643F5004C85E9 /* Fetch_TakeHomeUITests */,
 				4EB53F172D7643F4004C85E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,7 +86,6 @@
 			children = (
 				4EB53F162D7643F4004C85E9 /* Fetch_TakeHome.app */,
 				4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */,
-				4EB53F332D7643F5004C85E9 /* Fetch_TakeHomeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,29 +139,6 @@
 			productReference = 4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4EB53F322D7643F5004C85E9 /* Fetch_TakeHomeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB53F432D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Fetch_TakeHomeUITests" */;
-			buildPhases = (
-				4EB53F2F2D7643F5004C85E9 /* Sources */,
-				4EB53F302D7643F5004C85E9 /* Frameworks */,
-				4EB53F312D7643F5004C85E9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4EB53F352D7643F5004C85E9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4EB53F362D7643F5004C85E9 /* Fetch_TakeHomeUITests */,
-			);
-			name = Fetch_TakeHomeUITests;
-			packageProductDependencies = (
-			);
-			productName = Fetch_TakeHomeUITests;
-			productReference = 4EB53F332D7643F5004C85E9 /* Fetch_TakeHomeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +153,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					4EB53F282D7643F5004C85E9 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 4EB53F152D7643F4004C85E9;
-					};
-					4EB53F322D7643F5004C85E9 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 4EB53F152D7643F4004C85E9;
 					};
@@ -223,7 +174,6 @@
 			targets = (
 				4EB53F152D7643F4004C85E9 /* Fetch_TakeHome */,
 				4EB53F282D7643F5004C85E9 /* Fetch_TakeHomeTests */,
-				4EB53F322D7643F5004C85E9 /* Fetch_TakeHomeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +188,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4EB53F272D7643F5004C85E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EB53F312D7643F5004C85E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,13 +211,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EB53F2F2D7643F5004C85E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -282,11 +218,6 @@
 			isa = PBXTargetDependency;
 			target = 4EB53F152D7643F4004C85E9 /* Fetch_TakeHome */;
 			targetProxy = 4EB53F2A2D7643F5004C85E9 /* PBXContainerItemProxy */;
-		};
-		4EB53F352D7643F5004C85E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4EB53F152D7643F4004C85E9 /* Fetch_TakeHome */;
-			targetProxy = 4EB53F342D7643F5004C85E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -527,50 +458,6 @@
 			};
 			name = Release;
 		};
-		4EB53F442D7643F5004C85E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6G8ZM82SQ6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mnuzzolo.Fetch-TakeHomeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = Fetch_TakeHome;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Debug;
-		};
-		4EB53F452D7643F5004C85E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6G8ZM82SQ6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mnuzzolo.Fetch-TakeHomeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = Fetch_TakeHome;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,15 +484,6 @@
 			buildConfigurations = (
 				4EB53F412D7643F5004C85E9 /* Debug */,
 				4EB53F422D7643F5004C85E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4EB53F432D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Fetch_TakeHomeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4EB53F442D7643F5004C85E9 /* Debug */,
-				4EB53F452D7643F5004C85E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

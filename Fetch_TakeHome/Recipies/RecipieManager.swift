@@ -21,6 +21,8 @@ public final class RecipieManager: ObservableObject {
     @Published private(set) var recipies: [Recipie] = []
     private var url: URL?
     
+    public var isLoading: Bool = true
+    
     init(endpoint: String = .allRecipiesURL) {
         if let url = URL(string: endpoint) {
             self.url = url
@@ -39,6 +41,7 @@ public final class RecipieManager: ObservableObject {
         recipies = []
         
         guard let url = url else {
+            isLoading = false
             return
         }
 
@@ -52,9 +55,11 @@ public final class RecipieManager: ObservableObject {
             if let result = decodedData["recipes"] {
                 // Update with sorted list (alphabetically by name)
                 self.recipies = result.sorted { $0.name < $1.name }
+                isLoading = false
             }
         } catch {
             print("Fetching error: \(error)")
+            isLoading = false
         }
     }
 }

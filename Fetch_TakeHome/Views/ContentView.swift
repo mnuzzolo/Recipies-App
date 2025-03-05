@@ -28,12 +28,20 @@ struct ContentView: View {
         } else {
             // Error State
             VStack {
-                Text("No recipies were found.")
-                Button("Try Again") {
-                    Task {
-                        await manager.fetchRecipies()
+                Spacer()
+                if manager.isLoading {
+                    ProgressView()
+                        .padding()
+                    Text("Loading...")
+                } else {
+                    Text("No recipies were found.")
+                    Button("Try Again") {
+                        Task {
+                            await manager.fetchRecipies()
+                        }
                     }
                 }
+                Spacer()
             }
         }
     }
