@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var manager = RecipieManager()
+    @ObservedObject var manager = RecipeManager()
     
     var body: some View {
         HStack {
-            Text("Recipies")
+            Text("Recipes")
                 .font(.largeTitle)
                 .bold()
                 .padding()
             Spacer()
         }
-        if manager.recipies.count > 0 {
-            // Recipie List
+        if manager.recipes.count > 0 {
+            // Recipe List
             List {
-                ForEach(manager.recipies) { recipie in
-                    RecipieView(recipie: recipie)
+                ForEach(manager.recipes) { recipe in
+                    RecipeView(recipe: recipe)
                 }
             }
         } else {
@@ -34,10 +34,10 @@ struct ContentView: View {
                         .padding()
                     Text("Loading...")
                 } else {
-                    Text("No recipies were found.")
+                    Text("No recipes were found.")
                     Button("Try Again") {
                         Task {
-                            await manager.fetchRecipies()
+                            await manager.fetchRecipes()
                         }
                     }
                 }

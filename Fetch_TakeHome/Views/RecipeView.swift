@@ -1,5 +1,5 @@
 //
-//  RecipieView.swift
+//  RecipeView.swift
 //  Fetch_TakeHome
 //
 //  Created by Mike Nuzzolo on 3/3/25.
@@ -11,10 +11,10 @@ extension CGFloat {
     static let imageSize = 64.0
 }
 
-struct RecipieView: View {
+struct RecipeView: View {
     @Environment(\.openURL) var openURL
 
-    let recipie: Recipie
+    let recipe: Recipe
 
     var body: some View {
         HStack {
@@ -26,7 +26,7 @@ struct RecipieView: View {
     
     @ViewBuilder
     var imageView: some View {
-        CachedAsyncImage(url: recipie.photo_url_small) { phase in
+        CachedAsyncImage(url: recipe.photo_url_small) { phase in
             switch phase {
             case .empty:
                 ProgressView()
@@ -44,18 +44,18 @@ struct RecipieView: View {
     var metadataView: some View {
         VStack {
             HStack {
-                Text(recipie.name)
+                Text(recipe.name)
                     .bold()
                     .lineLimit(1)
                 Spacer()
             }
             HStack {
-                Text(recipie.cuisine)
+                Text(recipe.cuisine)
                     .lineLimit(1)
                     .italic()
                 Spacer()
             }
-            if let url = recipie.source_url {
+            if let url = recipe.source_url {
                 HStack {
                     Button("Learn More") {
                         openURL(url)
@@ -68,12 +68,12 @@ struct RecipieView: View {
     
     @ViewBuilder
     var chevronView: some View {
-        if recipie.source_url != nil {
+        if recipe.source_url != nil {
             Image(systemName: "chevron.right")
         }
     }
 }
 
 #Preview {
-    RecipieView(recipie: Recipie(uuid: "foo", cuisine: "Cuisine", name: "Name"))
+    RecipeView(recipe: Recipe(uuid: "foo", cuisine: "Cuisine", name: "Name"))
 }
