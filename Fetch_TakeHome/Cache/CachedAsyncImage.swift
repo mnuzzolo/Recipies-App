@@ -8,7 +8,7 @@
 import SwiftUI
 
 public struct CachedAsyncImage<Content: View> : View {
-    @ObservedObject private var loader: ImageLoader
+    @StateObject private var loader: ImageLoader = ImageLoader()
     
     let content: (AsyncImagePhase) -> Content
     
@@ -16,7 +16,6 @@ public struct CachedAsyncImage<Content: View> : View {
     
     public init(url: URL?, @ViewBuilder content: @escaping (AsyncImagePhase) -> Content) {
         self.content = content
-        self.loader = ImageLoader()
         self.url = url
     }
     

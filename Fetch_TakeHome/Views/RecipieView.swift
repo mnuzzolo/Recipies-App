@@ -13,7 +13,7 @@ extension CGFloat {
 
 struct RecipieView: View {
     @Environment(\.openURL) var openURL
-    
+
     let recipie: Recipie
 
     var body: some View {
