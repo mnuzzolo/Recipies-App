@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class RecipeViewModel: ObservableObject {
+public struct RecipeViewModel {
     private let recipe: Recipe
     
     init(_ recipe: Recipe) {
@@ -37,5 +37,10 @@ public class RecipeViewModel: ObservableObject {
     // Small image URL - to use in the list view
     public var smallImageURL: URL? {
         recipe.photo_url_small
+    }
+    
+    // Large image URL - to use in the list view
+    public var largeImageURL: URL? {
+        recipe.photo_url_large
     }
 }

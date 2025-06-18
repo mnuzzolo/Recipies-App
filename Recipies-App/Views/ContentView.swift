@@ -20,9 +20,16 @@ struct ContentView: View {
         }
         if manager.recipes.count > 0 {
             // Recipe List
-            List {
-                ForEach(manager.recipes) { recipe in
-                    RecipeView(viewModel: RecipeViewModel(recipe))
+            NavigationStack {
+                List {
+                    ForEach(manager.recipes) { recipe in
+                        NavigationLink {
+                            RecipeDetailView(viewModel: RecipeViewModel(recipe))
+                        } label: {
+                            RecipeView(viewModel: RecipeViewModel(recipe))
+                        }
+                        
+                    }
                 }
             }
         } else {
