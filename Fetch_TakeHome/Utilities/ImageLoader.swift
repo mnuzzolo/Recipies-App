@@ -1,6 +1,6 @@
 //
 //  ImageLoader.swift
-//  Fetch_TakeHome
+//  Recipies_App
 //
 //  Created by Mike Nuzzolo on 3/4/25.
 //

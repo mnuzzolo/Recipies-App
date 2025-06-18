@@ -1,12 +1,12 @@
 //
 //  RecipeManagerTests.swift
-//  Fetch_TakeHome
+//  Recipies_App
 //
 //  Created by Mike Nuzzolo on 3/5/25.
 //
 
 import XCTest
-@testable import Fetch_TakeHome
+@testable import Recipies_App
 
 class RecipeManagerTests: XCTestCase {
     

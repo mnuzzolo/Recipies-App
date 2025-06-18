@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Fetch_TakeHome
+@testable import Recipies_App
 
 class ImageLoaderTests: XCTestCase {
 

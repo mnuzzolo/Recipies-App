@@ -35,8 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4EB53F162D7643F4004C85E9 /* Fetch_TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetch_TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB53F162D7643F4004C85E9 /* Recipies-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipies-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB53F292D7643F5004C85E9 /* Recipies-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipies-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB53F532D76A6B6004C85E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,9 +46,9 @@
 			path = Fetch_TakeHome;
 			sourceTree = "<group>";
 		};
-		4EB53F2C2D7643F5004C85E9 /* Fetch_TakeHomeTests */ = {
+		4EB53F2C2D7643F5004C85E9 /* Recipies-AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Fetch_TakeHomeTests;
+			path = "Recipies-AppTests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,7 +76,7 @@
 			children = (
 				4EB53F532D76A6B6004C85E9 /* Assets.xcassets */,
 				4EB53F182D7643F4004C85E9 /* Fetch_TakeHome */,
-				4EB53F2C2D7643F5004C85E9 /* Fetch_TakeHomeTests */,
+				4EB53F2C2D7643F5004C85E9 /* Recipies-AppTests */,
 				4EB53F172D7643F4004C85E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,8 +84,8 @@
 		4EB53F172D7643F4004C85E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EB53F162D7643F4004C85E9 /* Fetch_TakeHome.app */,
-				4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */,
+				4EB53F162D7643F4004C85E9 /* Recipies-App.app */,
+				4EB53F292D7643F5004C85E9 /* Recipies-AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EB53F152D7643F4004C85E9 /* Fetch_TakeHome */ = {
+		4EB53F152D7643F4004C85E9 /* Recipies-App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB53F3D2D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Fetch_TakeHome" */;
+			buildConfigurationList = 4EB53F3D2D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Recipies-App" */;
 			buildPhases = (
 				4EB53F122D7643F4004C85E9 /* Sources */,
 				4EB53F132D7643F4004C85E9 /* Frameworks */,
@@ -109,16 +109,16 @@
 			fileSystemSynchronizedGroups = (
 				4EB53F182D7643F4004C85E9 /* Fetch_TakeHome */,
 			);
-			name = Fetch_TakeHome;
+			name = "Recipies-App";
 			packageProductDependencies = (
 			);
 			productName = Fetch_TakeHome;
-			productReference = 4EB53F162D7643F4004C85E9 /* Fetch_TakeHome.app */;
+			productReference = 4EB53F162D7643F4004C85E9 /* Recipies-App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EB53F282D7643F5004C85E9 /* Fetch_TakeHomeTests */ = {
+		4EB53F282D7643F5004C85E9 /* Recipies-AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB53F402D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Fetch_TakeHomeTests" */;
+			buildConfigurationList = 4EB53F402D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Recipies-AppTests" */;
 			buildPhases = (
 				4EB53F252D7643F5004C85E9 /* Sources */,
 				4EB53F262D7643F5004C85E9 /* Frameworks */,
@@ -130,13 +130,13 @@
 				4EB53F2B2D7643F5004C85E9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				4EB53F2C2D7643F5004C85E9 /* Fetch_TakeHomeTests */,
+				4EB53F2C2D7643F5004C85E9 /* Recipies-AppTests */,
 			);
-			name = Fetch_TakeHomeTests;
+			name = "Recipies-AppTests";
 			packageProductDependencies = (
 			);
 			productName = Fetch_TakeHomeTests;
-			productReference = 4EB53F292D7643F5004C85E9 /* Fetch_TakeHomeTests.xctest */;
+			productReference = 4EB53F292D7643F5004C85E9 /* Recipies-AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EB53F112D7643F4004C85E9 /* Build configuration list for PBXProject "Fetch_TakeHome" */;
+			buildConfigurationList = 4EB53F112D7643F4004C85E9 /* Build configuration list for PBXProject "Recipies-App" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -172,8 +172,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EB53F152D7643F4004C85E9 /* Fetch_TakeHome */,
-				4EB53F282D7643F5004C85E9 /* Fetch_TakeHomeTests */,
+				4EB53F152D7643F4004C85E9 /* Recipies-App */,
+				4EB53F282D7643F5004C85E9 /* Recipies-AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +216,7 @@
 /* Begin PBXTargetDependency section */
 		4EB53F2B2D7643F5004C85E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EB53F152D7643F4004C85E9 /* Fetch_TakeHome */;
+			target = 4EB53F152D7643F4004C85E9 /* Recipies-App */;
 			targetProxy = 4EB53F2A2D7643F5004C85E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,7 +363,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mnuzzolo.Fetch-TakeHome";
+				PRODUCT_BUNDLE_IDENTIFIER = "mnuzzolo.Recipies-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -401,7 +401,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mnuzzolo.Fetch-TakeHome";
+				PRODUCT_BUNDLE_IDENTIFIER = "mnuzzolo.Recipies-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -430,7 +430,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch_TakeHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch_TakeHome";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recipies-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recipies-App";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -453,7 +453,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch_TakeHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch_TakeHome";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recipies-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recipies-App";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -461,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EB53F112D7643F4004C85E9 /* Build configuration list for PBXProject "Fetch_TakeHome" */ = {
+		4EB53F112D7643F4004C85E9 /* Build configuration list for PBXProject "Recipies-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB53F3B2D7643F5004C85E9 /* Debug */,
@@ -470,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EB53F3D2D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Fetch_TakeHome" */ = {
+		4EB53F3D2D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Recipies-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB53F3E2D7643F5004C85E9 /* Debug */,
@@ -479,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EB53F402D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Fetch_TakeHomeTests" */ = {
+		4EB53F402D7643F5004C85E9 /* Build configuration list for PBXNativeTarget "Recipies-AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB53F412D7643F5004C85E9 /* Debug */,
