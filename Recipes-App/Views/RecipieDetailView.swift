@@ -30,14 +30,16 @@ struct RecipeDetailView: View {
             switch phase {
             case .empty:
                 ProgressView()
+                    .frame(width: 100, height: 100)
             case .success(let image):
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
             default:
                 Image(systemName: "photo")
+                    .resizable()
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .imageSize)
+        .frame(maxWidth: .infinity, idealHeight: .imageSize)
         .padding()
     }
     
