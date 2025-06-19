@@ -1,0 +1,30 @@
+//
+//  Recipe.swift
+//  Recipe_App
+//
+//  Created by Mike Nuzzolo on 3/3/25.
+//
+
+import Foundation
+
+struct Recipe: Identifiable, Decodable {
+    // The unique identifier for the recipe. Represented as a UUID.
+    var id: UUID {
+        UUID(uuidString: uuid) ?? UUID()
+    }
+    let uuid: String
+    // The cuisine of the recipe.
+    let cuisine: String
+    // The name of the recipe.
+    let name: String
+    // Details for the recipie
+    var details: String?
+    // The URL of the recipe’s full-size photo.
+    var photo_url_large: URL? = nil
+    // The URL of the recipe’s full-size photo. Useful for list view.
+    var photo_url_small: URL? = nil
+    // The URL of the recipe's original website.
+    var source_url: URL? = nil
+    // The URL of the recipe's YouTube video.
+    var youtube_url: URL? = nil
+}
